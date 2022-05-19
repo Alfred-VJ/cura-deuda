@@ -1,0 +1,27 @@
+.pShow{
+    text-align: justify;
+    margin: 50px 180px;
+    color: rgb(125, 194, 255);
+}
+
+
+.h1Show{
+    color: rgb(125, 194, 255);
+}
+.imgLogoArt{
+    margin-top: 50px;
+    width: 250px;
+}
+
+.imagenesShow{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ grid-gap: 1em;
+}
+
+.img2{
+   width: 100%;
+   height: auto;
+   margin-bottom: 100px;
+   border-radius: 20px;
+}

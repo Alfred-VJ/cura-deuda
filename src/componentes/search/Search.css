@@ -1,0 +1,26 @@
+.contSearch{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.inputSearch{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+.btnSearch{
+    width: 100px;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: black;
+    font-size: 20px;
+}
+
+.linkSearch{
+    text-decoration: none;
+    color: aliceblue;
+}
