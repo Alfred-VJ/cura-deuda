@@ -31,3 +31,22 @@ Las tecnologías que utilicé para este proyecto fueron:
 ## `Axios`
 ## `React`
 ## `Redux`
+
+
+# Observaciones importantes
+
+La aplicación tiene cuatro botones que no tienen aún asignada su funcionalidad.
+
+
+En la página de inicio serian los 2 siguientes:
+
+
+### `Contacto`
+### `Sobre mi`
+
+
+Y en el menú desplegable serian los siguientes dos:
+
+
+### `Artistas`
+### `Videos Musicales`
