@@ -10,7 +10,7 @@ const ShowArtists = () => {
     const { artists } = useSelector(state => state)
     const dispatch = useDispatch();
 
-
+    //Este Bloque permite montar la barra de navegación si el usuario recarga la página
     useEffect(() => {
         dispatch(activarMenu())
     }, [])
@@ -19,7 +19,7 @@ const ShowArtists = () => {
         <div className='contShow'>
             {
 
-
+                //Estas condicionales son para renderizar el "icono de loading", "si no hay resultados" o "el resultado de la búsqueda". Además en la línea 29 renderizo secciones del texto para separarlo en párrafos.
                 artists.artists === null ? <h1 className='h1DiscErr'>No hay coincidencias</h1> : !artists.artists ? <div className='contLoading'><img className='imgLoading' src={imgLoading} /></div> : artists.artists?.map(e => {
                     return (
                         <div key={e.idArtist}>

@@ -9,16 +9,16 @@ import { getDiscography, dontShowAlbum } from '../redux/actions/actions.js';
 
 
 const Navbar = () => {
-    const [menu, setMenu] = useState(true)
+    const [menu, setMenu] = useState(true) //Me permite ocultar o mostrar el menú desplegable
     const { artists } = useSelector(state => state)
     const dispatch = useDispatch()
 
-   
+
 
 
     const onClick = () => {
         setMenu({ menu: true })
-        dispatch(dontShowAlbum())
+        dispatch(dontShowAlbum()) //Cambia el estado de show a false para que el componente "Discografy" renderice correctamente
     }
 
     const activarMenu = () => {

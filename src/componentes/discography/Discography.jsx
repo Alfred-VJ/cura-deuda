@@ -9,14 +9,14 @@ const Discography = () => {
     const [albumId, setAlbumId] = useState('')
     const dispatch = useDispatch();
 
-
+    //Este Bloque permite montar la barra de navegación si el usuario recarga la página
     useEffect(() => {
         dispatch(activarMenu())
     }, [])
 
 
     const onAlbum = (e) => {
-        dispatch(showAlbum())
+        dispatch(showAlbum()) //Cambio el estado de show a true para que se renderice la info del álbum
         setAlbumId(e.target.value)
 
     }

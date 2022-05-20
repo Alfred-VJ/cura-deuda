@@ -11,11 +11,12 @@ const Search = () => {
     const [input, setInput] = useState('');
     const dispatch = useDispatch();
 
-
+    //Este Bloque permite montar la barra de navegación si el usuario recarga la página
     useEffect(() => {
         dispatch(activarMenu())
     }, [])
 
+    //Funciones típicas para los inputs y botones de búsqueda.
     const handleSubmit = (e) => {
         dispatch(dismount())
         dispatch(getArtists(input))
