@@ -1,7 +1,7 @@
 # Este proyecto fue creado con React App y Redux
 
 Puedes clonar el repositorio en tú máquina e instalar las dependencias con:
-### `npm install` y posteriormente correr la aplicación de manera local con el comando ### `npm start`.
+### `npm install` y posteriormente correr la aplicación de manera local con el comando: ### `npm start`.
 
 
 
