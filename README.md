@@ -10,7 +10,7 @@ Puedes clonar el repositorio en tú máquina e instalar las dependencias con:
 El proyecto podrás verlo en línea dando click o copiando el siguiente enlace en tu navegador:
 [https://cura-deuda.vercel.app/](https://cura-deuda.vercel.app/)
 
-![Image text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg)
+![Image text](https://cura-deuda.vercel.app/)
 
 # Descripción
 
