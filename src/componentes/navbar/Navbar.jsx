@@ -15,7 +15,7 @@ const Navbar = () => {
 
 
     const onClick = () => {
-        setMenu({menu: true})
+        setMenu({ menu: true })
         dispatch(dontShowAlbum())
     }
 
@@ -25,7 +25,7 @@ const Navbar = () => {
 
     const goDiscography = () => {
         dispatch(getDiscography(artists.artists[0].idArtist));
-        setMenu(!menu && true)
+        setMenu(menu ? false : true)
     }
 
     const goArtistas = () => {

@@ -30,8 +30,13 @@
     place-content: center;
 }
 
+.imgAlbum2{
+    width: 500px;
+}
+
 .imgAlbum{
     width: 500px;
+    margin-right: 210px;
 }
 
 .contTextAlbum{
@@ -41,4 +46,11 @@
     margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
+}
+.h1DiscErr{
+    color: antiquewhite;
+}
+.h4Disco{
+    color: antiquewhite;
+    margin-right: 210px;
 }
