@@ -16,14 +16,66 @@
 
 .contMenuHome nav ul li {
     list-style: none;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
-.linkHome{
-  text-decoration: none;
-  color: aliceblue;
-  font-weight: 900; 
-  font-size: 30px;
- 
- 
+.linkHome {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.linkHome:hover {
+    color: rgb(18, 21, 24);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.432) 0%, rgba(9, 9, 121, 0.397) 35%, rgba(0, 213, 255, 0.493) 100%);
+    border-radius: 10px;
+}
+
+/*-----------------------Media-Query*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url('https://conceptodefinicion.de/wp-content/uploads/2021/03/musica.jpg');
+
+    }
+
+
+
+    .imgHome {
+        display: none;
+        height: 950px;
+    }
+
+
+
+    .contMenuHome {
+        display: flex;
+
+    }
+
+    .navHome ul li {
+        display: flex;
+        justify-content: start;
+        padding-top: 80px;
+    }
+
+    .linkHome {
+
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 900;
+        font-size: 30px;
+        text-shadow:  3px 5px 2px rgb(3, 129, 112);
+
+
+    }
+
+    .linkHome:hover {
+        color: rgb(18, 21, 24);
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 0.432) 0%, rgba(9, 9, 121, 0.397) 35%, rgba(0, 213, 255, 0.493) 100%);
+        border-radius: 10px;
+    }
 }

@@ -16,10 +16,10 @@ const ShowArtists = () => {
             {
 
 
-                artists.artists === null ? <h1 className='h1Disc'>No hay coincidencias</h1> : !artists.artists ? <div className='contLoading'><img className='imgLoading' src={imgLoading} /></div> : artists.artists?.map(e => {
+                artists.artists === null ? <h1 className='h1DiscErr'>No hay coincidencias</h1> : !artists.artists ? <div className='contLoading'><img className='imgLoading' src={imgLoading} /></div> : artists.artists?.map(e => {
                     return (
                         <div key={e.idArtist}>
-                            <img src={e.strArtistBanner} alt="" />
+                            <img className='imgPrinArtis' src={e.strArtistBanner} alt="" />
                             <img className='imgLogoArt' src={e.strArtistLogo} alt="" />
                             <div className='pShow'>{
                                 e.strBiographyEN?.split('. ').map((e, i) => {

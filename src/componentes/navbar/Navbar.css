@@ -6,13 +6,16 @@
     background: linear-gradient(0deg, rgb(5, 57, 82) 49%, rgb(10, 67, 94) 92%);
 
 }
-.linkMenuHambur{
-   text-decoration: none;
-   color: rgb(201, 94, 7);
-  }
-.ulNavbar{
-    list-style:none
+
+.linkMenuHambur {
+    text-decoration: none;
+    color: rgb(201, 94, 7);
 }
+
+.ulNavbar {
+    list-style: none
+}
+
 .contNavbar .liNavbar {
     display: inline;
     padding-right: 55px;
@@ -22,54 +25,25 @@
 }
 
 
-
-.forNavbar {
-    display: inline;
-    margin-left: 150px;
-}
- 
-.inpuNabvar{
-    height: 30px;
-    width: 290px;
-    background: rgb(116, 43, 0);
-    background: linear-gradient(0deg, rgb(107, 57, 15) 49%, rgba(236, 141, 32, 0.726) 92%);
-    color: rgb(0, 0, 0);
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 3px rgb(181, 226, 255);
-    font-size: larger;
-    text-align: center;
-}
-
-.btnNavbar{
-    height:35px;
-    width: 90px;
-    border-radius: 5px;
-    border: none;
-    margin-left: 10px;
-    background: rgb(70, 77, 94);
-    background: linear-gradient(0deg, rgb(3, 43, 5) 49%, rgb(2, 124, 22) 92%);
-    color: antiquewhite;
-    font-size: 20px;
-}
-
-.liNabvar1{
+.liNabvar1 {
     position: relative;
     z-index: 10;
 }
-.icoMenu{
+
+.icoMenu {
     width: 50px;
     margin-top: 15px;
     margin-left: 5px;
     /* vertical-align: top; */
 }
 
-.icoMenu:hover{
+.icoMenu:hover {
     cursor: pointer;
     width: 45px;
     padding-right: 5px;
 }
 
-.contMenu{
+.contMenu {
     background-color: rgb(10, 67, 94);
     background: linear-gradient(90deg, rgb(5, 57, 82) 0%, rgb(25, 69, 90) 35%, rgb(3, 40, 58) 100%);
     box-shadow: 2px 0px 5px 2px rgb(70, 77, 94);
@@ -83,29 +57,29 @@
 }
 
 
-.active{
+.active {
     transform: translate(-500px);
 }
 
-.opacity{
+.opacity {
     background-color: rgb(6, 15, 8);
     transition: all .5s ease;
 }
 
 
-.h1Menu{
+.h1Menu {
     color: rgb(15, 110, 110);
     margin-top: -30px;
 }
 
 
 
-.contMenu .ulMenu{
+.contMenu .ulMenu {
     padding: 100px 0px 20px 0px;
     list-style: none;
 }
 
-.contMenu .ulMenu .liMenu{
+.contMenu .ulMenu .liMenu {
     color: rgb(201, 94, 7);
     display: block;
     font-size: 25px;
@@ -116,13 +90,61 @@
     cursor: pointer;
 }
 
-.contMenu .ulMenu .liMenu:hover{
+.contMenu .ulMenu .liMenu:hover {
     background-color: rgb(201, 94, 7);
-    background: linear-gradient(90deg, rgb(245, 135, 45) 0%,rgb(201, 94, 7) 35%, rgb(77, 34, 0) 100%);
+    background: linear-gradient(90deg, rgb(245, 135, 45) 0%, rgb(201, 94, 7) 35%, rgb(77, 34, 0) 100%);
     color: rgb(6, 15, 8);
     border-radius: 10px 5px 30px 0;
 }
 
 
 
+/*----------media query-----------*/
 
+
+@media only screen and (max-width: 600px) {
+    .contNavbar {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid rgb(13, 36, 25);
+        background: rgb(6, 15, 8);
+        background: linear-gradient(0deg, rgb(5, 57, 82) 49%, rgb(10, 67, 94) 92%);
+    
+    }
+    
+    .linkMenuHambur {
+        text-decoration: none;
+        color: rgb(201, 94, 7);
+    }
+    
+    .ulNavbar {
+        list-style: none
+    }
+    
+    .icoMenu:hover {
+        cursor: pointer;
+        width: 45px;
+        padding-right: 5px;
+    }
+    
+    .contMenu {
+        background-color: rgb(10, 67, 94);
+        background: linear-gradient(90deg, rgb(5, 57, 82) 0%, rgb(25, 69, 90) 35%, rgb(3, 40, 58) 100%);
+        box-shadow: 2px 0px 5px 2px rgb(70, 77, 94);
+        border-radius: 0px 50px 80px 0px;
+        width: 280px;
+        height: 100vh;
+        position: absolute;
+        margin-top: 11px;
+        left: 0px;
+        transition: all .7s ease;
+    }
+     
+    .h1Menu {
+        color: rgb(15, 110, 110);
+        font-size: 25px;
+        text-align: start;
+        margin-left: 20px;
+    }    
+
+}

@@ -2,17 +2,16 @@
     display: grid;
     position: absolute;
     width: 15%;
-
     margin-left: 80%;
 }
 
-.h1Disc{
+.h1Disc {
     color: rgb(143, 88, 5);
     font-size: 60px;
     margin-right: 200px;
 }
 
-.btnDisco {
+.btnDiscoS {
     height: 45px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -24,33 +23,123 @@
     font-size: 10px;
     font-weight: 900;
 }
-.contAlbumSuper{
+
+.contAlbumSuper {
     width: 80%;
     display: grid;
     place-content: center;
 }
 
-.imgAlbum2{
+.imgAlbum2 {
     width: 500px;
 }
 
-.imgAlbum{
+.imgAlbum {
     width: 500px;
     margin-right: 210px;
 }
 
-.contTextAlbum{
-    color:aliceblue;
+.contTextAlbum {
+    color: aliceblue;
 }
-.pAlbum{
+
+.pAlbum {
     margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
 }
-.h1DiscErr{
+
+.h1DiscErr {
     color: antiquewhite;
 }
-.h4Disco{
+
+.h4Disco {
     color: antiquewhite;
     margin-right: 210px;
+}
+
+
+/*----------media query-----------*/
+
+
+@media only screen and (max-width: 600px) {
+    .contDiscPrin {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .contBtn {
+        position: relative;
+        margin-left: -10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .h1Disc {
+
+        display: none;
+
+    }
+
+    .btnDiscoS {
+        width: 280%;
+        height: 45px;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: rgb(255, 255, 255);
+        border: none;
+        background-color: rgb(143, 88, 5);
+        cursor: pointer;
+        border-radius: 15px 5px 15px 1px;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: end;
+
+    }
+
+    .contAlbumSuper {
+        width: auto;
+        display: grid;
+        place-content: center;
+
+    }
+
+    .imgAlbum2 {
+        max-width: 100%;
+
+    }
+
+    .imgAlbum {
+        max-width: 100%;
+
+    }
+
+    .contTextAlbum {
+        color: aliceblue;
+
+    }
+
+    .pAlbum {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+
+    }
+
+    .h1DiscErr {
+        color: antiquewhite;
+
+    }
+
+    .h4Disco {
+        color: antiquewhite;
+        margin-right: 0px;
+
+    }
 }

@@ -19,7 +19,7 @@ const Discography = () => {
     console.log(albumId)
 
     return (
-        <div>
+        <div className='contDiscPrin'>
             <h1 className='h1Disc'>Discografía</h1>
             <div className='contBtn'>
                 {
@@ -27,7 +27,7 @@ const Discography = () => {
                         return (
                             <button
                                 key={e.idAlbum}
-                                className='btnDisco'
+                                className='btnDiscoS'
                                 onClick={onAlbum}
                                 value={e.idAlbum}
                             >{e.strAlbum}</button>
@@ -36,24 +36,26 @@ const Discography = () => {
                 }
             </div>
 
-            {
-                discography?.length === 0 ? <h1 className='h1DiscErr'> Primero genera la busqueda de un artista</h1> :
-                    !show ? <div>
-                        <h4 className='h4Disco'>Aqui podras encontrar discografía de tu artista favorito</h4>
-                        <img className='imgAlbum' src={artists.artists[0].strArtistWideThumb} alt="" />
-                    </div> : <div className='contAlbumSuper'>
-                        {
-                            <div className='contAlbum'>
-                                <img className='imgAlbum2' src={discography.album?.filter(e => e.idAlbum === albumId)[0].strAlbumThumb} alt="" />
-                                <div className='contTextAlbum'>
-                                    <p className='pAlbum'>{discography.album?.filter(e => e.idAlbum === albumId)[0].strDescriptionEN}</p>
+            <div className='contArtDisc'>
+
+                {
+                    discography?.length === 0 ? <h1 className='h1DiscErr'> Primero genera la busqueda de un artista</h1> :
+                        !show ? <div>
+                            <h4 className='h4Disco'>Aqui podras encontrar discografía de tu artista favorito</h4>
+                            <img className='imgAlbum' src={artists.artists[0].strArtistWideThumb} alt="" />
+                        </div> : <div className='contAlbumSuper'>
+                            {
+                                <div className='contAlbum'>
+                                    <img className='imgAlbum2' src={discography.album?.filter(e => e.idAlbum === albumId)[0].strAlbumThumb} alt="" />
+                                    <div className='contTextAlbum'>
+                                        <p className='pAlbum'>{discography.album?.filter(e => e.idAlbum === albumId)[0].strDescriptionEN}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        }
-                    </div>
+                            }
+                        </div>
 
-            }
-
+                }
+            </div>
 
         </div>
     )

@@ -1,10 +1,10 @@
-.contSearch{
+.contSearch {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-.inputSearch{
+.inputSearch {
     width: 500px;
     height: 50px;
     text-align: center;
@@ -12,7 +12,7 @@
     border-radius: 8px;
 }
 
-.btnSearch{
+.btnSearch {
     width: 100px;
     border-radius: 15px;
     margin-left: 10px;
@@ -20,7 +20,38 @@
     font-size: 20px;
 }
 
-.linkSearch{
+.linkSearch {
     text-decoration: none;
     color: aliceblue;
+}
+
+
+
+
+/*----------media query-----------*/
+
+@media only screen and (max-width: 600px) {
+    .contSearch {
+        display: grid;
+    }
+
+    .inputSearch {
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+
+    .btnSearch {
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        margin-left: 10px;
+        background-color: black;
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
 }

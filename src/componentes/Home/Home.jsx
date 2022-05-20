@@ -19,7 +19,7 @@ const Home = () => {
                 <img className='imgHome' src={img} alt="" />
             </div>
             <div className='contMenuHome'>
-                <nav>
+                <nav className='navHome'>
                     <ul>
                         <li>
                             <Link onClick={activar} className='linkHome' to='/inicio'>INICIO</Link>

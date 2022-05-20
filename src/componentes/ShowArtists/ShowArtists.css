@@ -1,48 +1,78 @@
-.pShow{
+.pShow {
     text-align: justify;
     margin: 50px 180px;
     color: rgb(125, 194, 255);
 }
 
 
-.h1Show{
+.h1Show {
     color: rgb(125, 194, 255);
 }
-.imgLogoArt{
+
+.imgLogoArt {
     margin-top: 40px;
     width: 250px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.imagenesShow{
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
- grid-gap: 1em;
+.imagenesShow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
 }
 
-.img2{
-   width: 100%;
-   height: auto;
-   margin-bottom: 100px;
-   border-radius: 20px;
+.img2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 20px;
 }
 
-@keyframes rotacion{
-    from{transform: rotateZ(0deg);}
-    to{transform: rotateZ(11000deg);}
+@keyframes rotacion {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(11000deg);
+    }
 }
 
-.contLoading{
+.contLoading {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
 
-.imgLoading{
+.imgLoading {
     position: absolute;
     width: 150px;
     animation-name: rotacion;
     animation-duration: 30s;
 }
 
+/*-------------media query---------*/
+
+@media only screen and (max-width: 600px) {
+    .h1DiscErr{
+        font-size: 30px;
+        color: antiquewhite;
+    }
+
+    .pShow {
+        text-align: justify;
+        margin: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 900;
+    }
+  .imgPrinArtis{
+    max-width: 100%;
+  }
+
+
+}
