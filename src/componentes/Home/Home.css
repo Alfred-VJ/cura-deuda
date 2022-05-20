@@ -28,8 +28,6 @@
 
 .linkHome:hover {
     color: rgb(18, 21, 24);
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0.432) 0%, rgba(9, 9, 121, 0.397) 35%, rgba(0, 213, 255, 0.493) 100%);
     border-radius: 10px;
 }
 
@@ -74,8 +72,6 @@
 
     .linkHome:hover {
         color: rgb(18, 21, 24);
-        background: rgb(2, 0, 36);
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0.432) 0%, rgba(9, 9, 121, 0.397) 35%, rgba(0, 213, 255, 0.493) 100%);
         border-radius: 10px;
     }
 }

@@ -96,9 +96,9 @@
         border: none;
         cursor: pointer;
         border-radius: 15px 5px 15px 1px;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 900;
-        text-align: end;
+        text-align: center;
 
     }
 
@@ -121,7 +121,7 @@
 
     .contTextAlbum {
         color: aliceblue;
-
+        font-size: larger;
     }
 
     .pAlbum {
