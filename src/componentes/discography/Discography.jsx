@@ -16,8 +16,6 @@ const Discography = () => {
 
     }
 
-    console.log(albumId)
-
     return (
         <div className='contDiscPrin'>
             <h1 className='h1Disc'>Discografía</h1>
@@ -28,8 +26,8 @@ const Discography = () => {
                             <button
                                 key={e.idAlbum}
                                 className='btnDiscoS'
-                                onClick={onAlbum}
                                 value={e.idAlbum}
+                                onClick={onAlbum}
                             >{e.strAlbum}</button>
                         )
                     })
