@@ -7,9 +7,6 @@ import imgLoading from './img/notas_music.png'
 
 const ShowArtists = () => {
     const { artists } = useSelector(state => state)
-    const h = true
-    console.log(artists.artists === null)
-
 
     return (
         <div className='contShow'>

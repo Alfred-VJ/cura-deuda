@@ -42,13 +42,13 @@ const Discography = () => {
                     discography?.length === 0 ? <h1 className='h1DiscErr'> Primero genera la busqueda de un artista</h1> :
                         !show ? <div>
                             <h4 className='h4Disco'>Aqui podras encontrar discografía de tu artista favorito</h4>
-                            <img className='imgAlbum' src={artists.artists[0].strArtistWideThumb} alt="" />
+                            <img className='imgAlbum' src={artists.artists[0]?.strArtistWideThumb} alt="" />
                         </div> : <div className='contAlbumSuper'>
                             {
                                 <div className='contAlbum'>
-                                    <img className='imgAlbum2' src={discography.album?.filter(e => e.idAlbum === albumId)[0].strAlbumThumb} alt="" />
+                                    <img className='imgAlbum2' src={discography.album?.filter(e => e.idAlbum === albumId)[0]?.strAlbumThumb} alt="" />
                                     <div className='contTextAlbum'>
-                                        <p className='pAlbum'>{discography.album?.filter(e => e.idAlbum === albumId)[0].strDescriptionEN}</p>
+                                        <p className='pAlbum'>{discography.album?.filter(e => e.idAlbum === albumId)[0]?.strDescriptionEN}</p>
                                     </div>
                                 </div>
                             }
