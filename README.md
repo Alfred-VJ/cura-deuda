@@ -12,7 +12,7 @@ El proyecto podrás verlo en línea dando click o copiando el siguiente enlace e
 
 # Descripción
 
-El proyecto tiene una temática ### `musical`, puede buscar artistas o grupos, además te presenta el álbum de dicho artista o grupo.
+El proyecto tiene una temática: ### `musical`, puede buscar artistas o grupos, además te presenta el álbum de dicho artista o grupo.
 
 No es un proyecto aun terminado, ya que fue un desafío para una entrevista laboral, por lo tanto algunas funcionalidades aún no están concluidas.
 
