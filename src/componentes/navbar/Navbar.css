@@ -6,6 +6,10 @@
     background: linear-gradient(0deg, rgb(5, 57, 82) 49%, rgb(10, 67, 94) 92%);
 
 }
+.linkMenuHambur{
+   text-decoration: none;
+   color: rgb(201, 94, 7);
+  }
 .ulNavbar{
     list-style:none
 }

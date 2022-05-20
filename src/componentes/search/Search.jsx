@@ -1,8 +1,8 @@
 import './Search.css'
 import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { getArtists } from '../../componentes/redux/actions/actions.js'
-import {Link} from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { getArtists, dismount } from '../../componentes/redux/actions/actions.js'
+import { Link } from 'react-router-dom'
 
 
 
@@ -13,7 +13,8 @@ const Search = () => {
 
 
     const handleSubmit = (e) => {
-          dispatch(getArtists(input))
+        dispatch(dismount())
+        dispatch(getArtists(input))
     }
 
     const handleChange = (e) => {
@@ -28,7 +29,7 @@ const Search = () => {
 
             <input
                 type="text"
-                placeholder='busca tu banda o artista favorita'
+                placeholder='busca tu banda o artista favorito'
                 value={input.name}
                 onChange={handleChange}
                 className='inputSearch'

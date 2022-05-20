@@ -1,0 +1,44 @@
+.contBtn {
+    display: grid;
+    position: absolute;
+    width: 15%;
+
+    margin-left: 80%;
+}
+
+.h1Disc{
+    color: rgb(143, 88, 5);
+    font-size: 60px;
+    margin-right: 200px;
+}
+
+.btnDisco {
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(143, 88, 5);
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 900;
+}
+.contAlbumSuper{
+    width: 80%;
+    display: grid;
+    place-content: center;
+}
+
+.imgAlbum{
+    width: 500px;
+}
+
+.contTextAlbum{
+    color:aliceblue;
+}
+.pAlbum{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}

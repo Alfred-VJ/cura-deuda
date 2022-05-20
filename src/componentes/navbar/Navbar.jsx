@@ -1,37 +1,37 @@
-import { useState } from 'react'
-import icoMenu from './img/menu.png'
-import nota_music from './img/notas_music.png'
-import { Link } from 'react-router-dom'
-import './Navbar.css'
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import icoMenu from './img/menu.png';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+import { getDiscography, dontShowAlbum } from '../redux/actions/actions.js';
+
+
 
 
 const Navbar = () => {
     const [menu, setMenu] = useState(true)
+    const { artists } = useSelector(state => state)
+    const dispatch = useDispatch()
 
 
-    const handleChange = (e) => {
-
-    }
-
-    const onClickS = (e) => {
-
+    const onClick = () => {
+        setMenu({menu: true})
+        dispatch(dontShowAlbum())
     }
 
     const activarMenu = () => {
         setMenu(menu ? false : true)
     }
 
-    const ascendente = () => {
-
-    }
-    const descendente = () => {
-
+    const goDiscography = () => {
+        dispatch(getDiscography(artists.artists[0].idArtist));
+        setMenu(!menu && true)
     }
 
-    const populationAsc = () => {
+    const goArtistas = () => {
 
     }
-    const populationDesc = () => {
+    const goVideos = () => {
 
     }
 
@@ -48,21 +48,18 @@ const Navbar = () => {
                     />
                     <div className={`contMenu  ${menu && 'active'}`}>
                         <ul className='ulMenu'>
-                            <h1 className='h1Menu'>Ordenar</h1>
-                            <li
-                                className='liMenu'
-                                onClick={ascendente}
-                            >A a Z</li>
-                            <li className='liMenu' onClick={descendente}>Albunes</li>
-                            <li className='liMenu' onClick={populationAsc}>Población Asc</li>
-                            <li className='liMenu' onClick={populationDesc}>Población Desc</li>
+                            <h1 className='h1Menu'>Mas de tu artista</h1>
+                            <li className='liMenu' onClick={goDiscography}>
+                                <Link className='linkMenuHambur' to='/discography'>Discografía</Link></li>
+                            <li className='liMenu' onClick={goArtistas}>Artistas</li>
+                            <li className='liMenu' onClick={goVideos}>Videos Musicalaes</li>
                         </ul>
                     </div>
                 </div>
                 <nav className='navNavbar'>
 
                     <ul className='ulNavbar'>
-                        <Link to='inicio' className='liNavbar'>Inicio</Link>
+                        <Link onClick={onClick} to='inicio' className='liNavbar'>Inicio</Link>
 
                     </ul>
                 </nav>

@@ -2,7 +2,7 @@ import './Home.css';
 import React from 'react'
 import { Link } from 'react-router-dom'
 import img from './img/music.png'
-import { activarMenu } from '../redux/actions/actions.js'
+import { activarMenu, dontShowAlbum } from '../redux/actions/actions.js'
 import { useDispatch } from 'react-redux'
 
 
@@ -10,6 +10,7 @@ const Home = () => {
     const dispatch = useDispatch()
 
     const activar = () => {
+        dispatch(dontShowAlbum())
         dispatch(activarMenu())
     }
     return (

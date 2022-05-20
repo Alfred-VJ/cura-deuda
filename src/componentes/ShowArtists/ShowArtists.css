@@ -9,8 +9,10 @@
     color: rgb(125, 194, 255);
 }
 .imgLogoArt{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .imagenesShow{
@@ -25,3 +27,22 @@
    margin-bottom: 100px;
    border-radius: 20px;
 }
+
+@keyframes rotacion{
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(11000deg);}
+}
+
+.contLoading{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.imgLoading{
+    position: absolute;
+    width: 150px;
+    animation-name: rotacion;
+    animation-duration: 30s;
+}
+
