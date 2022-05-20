@@ -1,7 +1,7 @@
 import './Search.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { getArtists, dismount } from '../../componentes/redux/actions/actions.js'
+import { getArtists, dismount, activarMenu } from '../../componentes/redux/actions/actions.js'
 import { Link } from 'react-router-dom'
 
 
@@ -11,6 +11,10 @@ const Search = () => {
     const [input, setInput] = useState('');
     const dispatch = useDispatch();
 
+
+    useEffect(() => {
+        dispatch(activarMenu())
+    }, [])
 
     const handleSubmit = (e) => {
         dispatch(dismount())

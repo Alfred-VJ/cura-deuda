@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import icoMenu from './img/menu.png';
 import { Link } from 'react-router-dom';
@@ -12,6 +12,8 @@ const Navbar = () => {
     const [menu, setMenu] = useState(true)
     const { artists } = useSelector(state => state)
     const dispatch = useDispatch()
+
+   
 
 
     const onClick = () => {

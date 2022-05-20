@@ -1,13 +1,18 @@
 import './Discography.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { showAlbum } from '../redux/actions/actions.js'
+import { showAlbum, activarMenu } from '../redux/actions/actions.js'
 
 
 const Discography = () => {
     const { discography, artists, show } = useSelector(state => state);
     const [albumId, setAlbumId] = useState('')
     const dispatch = useDispatch();
+
+
+    useEffect(() => {
+        dispatch(activarMenu())
+    }, [])
 
 
     const onAlbum = (e) => {

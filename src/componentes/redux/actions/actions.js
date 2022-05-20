@@ -42,7 +42,7 @@ export const getDiscography = (id) => {
 
 
 
-export const activarMenu = () => {
+export const activarMenu =  () => {
     return {
         type: ACTIVAR_MENU,
     }

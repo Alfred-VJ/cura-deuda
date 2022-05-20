@@ -1,12 +1,19 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import './ShowArtists.css'
 import imgLoading from './img/notas_music.png'
-
+import { useEffect } from 'react';
+import { activarMenu } from '../redux/actions/actions';
 
 
 
 const ShowArtists = () => {
     const { artists } = useSelector(state => state)
+    const dispatch = useDispatch();
+
+
+    useEffect(() => {
+        dispatch(activarMenu())
+    }, [])
 
     return (
         <div className='contShow'>
