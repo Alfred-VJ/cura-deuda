@@ -16,13 +16,16 @@
     width: 100px;
     border-radius: 15px;
     margin-left: 10px;
-    background-color: black;
+    background-color: rgb(201, 94, 7);
+    background: linear-gradient(90deg, #9c461e 0%, #882d02 35%, #661f00 100%);
     font-size: 20px;
 }
 
 .linkSearch {
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 900;
 }
 
 
@@ -48,7 +51,6 @@
         height: 50px;
         border-radius: 15px;
         margin-left: 10px;
-        background-color: black;
         font-size: 25px;
         margin-left: auto;
         margin-right: auto;

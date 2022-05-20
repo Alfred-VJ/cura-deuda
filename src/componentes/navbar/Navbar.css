@@ -1,15 +1,20 @@
 .contNavbar {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid rgb(13, 36, 25);
-    background: rgb(6, 15, 8);
-    background: linear-gradient(0deg, rgb(5, 57, 82) 49%, rgb(10, 67, 94) 92%);
+    border: 1px solid #161a1d;
+    background: #bb3e03;
+    background: linear-gradient(0deg, #141f2e 49%, #001219 92%);
 
 }
 
 .linkMenuHambur {
     text-decoration: none;
-    color: rgb(201, 94, 7);
+    color:#bb3e03;
+}
+
+.linkMenuHambur:hover {
+    text-decoration: none;
+    color:#000000;
 }
 
 .ulNavbar {
@@ -20,8 +25,9 @@
     display: inline;
     padding-right: 55px;
     font-size: larger;
+    font-weight: 900;
     text-decoration: none;
-    color: aliceblue;
+    color: #bb3e03
 }
 
 
@@ -44,10 +50,10 @@
 }
 
 .contMenu {
-    background-color: rgb(10, 67, 94);
-    background: linear-gradient(90deg, rgb(5, 57, 82) 0%, rgb(25, 69, 90) 35%, rgb(3, 40, 58) 100%);
-    box-shadow: 2px 0px 5px 2px rgb(70, 77, 94);
-    border-radius: 0px 150px 380px 0px;
+    background-color: #bb3e03;
+    background: linear-gradient(90deg, #0d141d 0%, #121d2c 35%, #000000 100%);
+    box-shadow: 0px 0px 20px 1px #e85d04;
+    border-radius: 0px 100px 180px 0px;
     width: 300px;
     height: 90vh;
     position: absolute;
@@ -68,7 +74,8 @@
 
 
 .h1Menu {
-    color: rgb(15, 110, 110);
+    color: #a13401;
+    text-shadow: 1px 1px 5px #e9caa6;
     margin-top: -30px;
 }
 
@@ -92,7 +99,7 @@
 
 .contMenu .ulMenu .liMenu:hover {
     background-color: rgb(201, 94, 7);
-    background: linear-gradient(90deg, rgb(245, 135, 45) 0%, rgb(201, 94, 7) 35%, rgb(77, 34, 0) 100%);
+    background: linear-gradient(90deg, #e6662b 0%, #bb3e03 35%, #6d2301 100%);
     color: rgb(6, 15, 8);
     border-radius: 10px 5px 30px 0;
 }
@@ -107,9 +114,6 @@
         display: flex;
         flex-wrap: wrap;
         border: 1px solid rgb(13, 36, 25);
-        background: rgb(6, 15, 8);
-        background: linear-gradient(0deg, rgb(5, 57, 82) 49%, rgb(10, 67, 94) 92%);
-    
     }
     
     .linkMenuHambur {
@@ -128,9 +132,6 @@
     }
     
     .contMenu {
-        background-color: rgb(10, 67, 94);
-        background: linear-gradient(90deg, rgb(5, 57, 82) 0%, rgb(25, 69, 90) 35%, rgb(3, 40, 58) 100%);
-        box-shadow: 2px 0px 5px 2px rgb(70, 77, 94);
         border-radius: 0px 50px 80px 0px;
         width: 280px;
         height: 100vh;
@@ -141,7 +142,6 @@
     }
      
     .h1Menu {
-        color: rgb(15, 110, 110);
         font-size: 25px;
         text-align: start;
         margin-left: 20px;
