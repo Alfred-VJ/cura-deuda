@@ -10,6 +10,8 @@ Puedes clonar el repositorio en tú máquina e instalar las dependencias con:
 El proyecto podrás verlo en línea dando click o copiando el siguiente enlace en tu navegador:
 [https://cura-deuda.vercel.app/](https://cura-deuda.vercel.app/)
 
+![Image text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg)
+
 # Descripción
 
 El proyecto tiene una temática: ### `musical`, puede buscar artistas o grupos, además te presenta el álbum de dicho artista o grupo.
