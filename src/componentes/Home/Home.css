@@ -36,15 +36,15 @@
 /*-----------------------Media-Query*/
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-image: url('https://conceptodefinicion.de/wp-content/uploads/2021/03/musica.jpg');
+    /* body {
+        /* background-image: url('https://conceptodefinicion.de/wp-content/uploads/2021/03/musica.jpg'); 
 
-    }
-
+    } */
+   
 
 
     .imgHome {
-        display: none;
+        display: flex;
         height: 950px;
     }
 
