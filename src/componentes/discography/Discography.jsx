@@ -44,7 +44,7 @@ const Discography = () => {
                         </div> : <div className='contAlbumSuper'>
                             {
                                 <div className='contAlbum'>
-                                    <img className='imgAlbum2' src={discography.album?.filter(e => e.idAlbum === albumId)[0]?.strAlbumThumb} alt="" />
+                                    <img className='imgAlbum2' src={discography.album?.filter(e => e.idAlbum === albumId)[0]?.strAlbumThumb} alt="Foto de ALbum" />
                                     <div className='contTextAlbum'>
                                         <p className='pAlbum'>{discography.album?.filter(e => e.idAlbum === albumId)[0]?.strDescriptionEN}</p>
                                     </div>

@@ -52,7 +52,7 @@ const Navbar = () => {
                             <li className='liMenu' onClick={goDiscography}>
                                 <Link className='linkMenuHambur' to='/discography'>Discografía</Link></li>
                             <li className='liMenu' onClick={goArtistas}>Artistas</li>
-                            <li className='liMenu' onClick={goVideos}>Videos Musicalaes</li>
+                            <li className='liMenu' onClick={goVideos}>Videos Musicales</li>
                         </ul>
                     </div>
                 </div>
