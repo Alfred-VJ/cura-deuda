@@ -16,7 +16,7 @@ El proyecto podrás verlo en línea dando click o copiando el siguiente enlace e
 
 El proyecto tiene una temática: ### `musical`, puede buscar artistas o grupos, además te presenta el álbum de dicho artista o grupo.
 
-No es un proyecto aun terminado, ya que fue un desafío para una entrevista laboral, por lo tanto algunas funcionalidades aún no están concluidas.
+No es un proyecto terminado, ya que fue un desafío para una entrevista laboral, por lo tanto algunas funcionalidades aún no están concluidas.
 
 Contiene una página de inicio, un buscador y un menú desplegable, además de algunos botones para la búsqueda de sus respectivos datos.
 
